@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+// Pointer
     @IBOutlet weak var itemPrice: UITextField!
     @IBOutlet weak var salesTax: UITextField!
     @IBOutlet weak var labelIVA: UILabel!
@@ -17,7 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         labelIVA.text = ""
     }
-
+    
+// Function
     @IBAction func totalTaxCalculator(_ sender: Any) {
         let price = Double(itemPrice.text!)!
         let salesTxt = Double(salesTax.text!)!
